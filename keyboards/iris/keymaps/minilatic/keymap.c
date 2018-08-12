@@ -29,7 +29,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_LGUI,          KC_RGUI, KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                    LALM,    LFUNC,   KC_SPC,                    KC_SPC,  RFUNC,   RALH
+                                    KC_LALT, LFUNC,   KC_SPC,                    KC_SPC,  RFUNC,   KC_RALT
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
   ),
 
@@ -39,9 +39,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
      _______, XXXXXXX, XXXXXXX, KC_UP,   XXXXXXX, XXXXXXX,                            XXXXXXX, KC_INS,  KC_PSCR, KC_LSCR, KC_PAUS, KC_RBRC,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     _______, XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX,                            XXXXXXX, KC_ESC,  KC_HOME, KC_PGUP, KC_BSPC, KC_ENT,
+     _______, KC_CAPS, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX,                            XXXXXXX, KC_ESC,  KC_HOME, KC_PGUP, KC_BSPC, KC_ENT,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,          _______, XXXXXXX, KC_DEL,  KC_END,  KC_PGDN, XXXXXXX, _______,
+     _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,          _______, XXXXXXX, KC_DEL,  KC_END,  KC_PGDN, KC_BSLS, _______,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     _______, _______,  _______,                   _______, _______, _______
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
@@ -53,9 +53,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
      _______, XXXXXXX, XXXXXXX, KC_UP,   XXXXXXX, XXXXXXX,                            XXXXXXX, KC_INS,  KC_PSCR, KC_LSCR, KC_PAUS, KC_RBRC,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     _______, XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX,                            XXXXXXX, KC_ESC,  KC_HOME, KC_PGUP, KC_BSPC, KC_ENT,
+     _______, KC_CAPS, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX,                            XXXXXXX, KC_ESC,  KC_HOME, KC_PGUP, KC_BSPC, KC_ENT,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,          _______, XXXXXXX, KC_DEL,  KC_END,  KC_PGDN, XXXXXXX, _______,
+     _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,          _______, XXXXXXX, KC_DEL,  KC_END,  KC_PGDN, KC_BSLS, _______,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     _______, _______, _______,                   _______, _______,  _______
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
@@ -93,11 +93,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
      _______, _______, _______, _______, _______, _______,                            _______, _______, _______, _______, _______, _______,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     _______, _______, _______, _______, _______, _______,                            _______, _______, _______, _______, _______, _______,
+     _______, _______, _______, KC_MS_U, _______, _______,                            _______, _______, _______, _______, _______, _______,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     _______, _______, _______, _______, KC_A, _______,                            _______, _______, _______, _______, _______, _______,
+     _______, _______, KC_MS_L, KC_MS_D, KC_MS_R, _______,                            KC_ACL0, KC_BTN1, KC_BTN2, KC_ACL2, _______, _______,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     _______, _______, _______, _______, _______, _______, _______,          _______, _______, _______, _______, _______, _______, _______,
+     _______, _______, _______, KC_WH_U, KC_WH_D, _______, _______,          _______, _______, KC_ACL1, _______, _______, _______, _______,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     _______, _______, _______,                   _______, _______, _______
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
@@ -115,43 +115,24 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     case LFUNC:
     	if(record->event.pressed){
-    		layer_on(_FUNCTION);
+    		layer_on(_LFUNC);
     		update_tri_layer(_LFUNC, _RFUNC, _ADJUST);
     	}else{
-    		layer_off(_FUNCTION);
+    		layer_off(_LFUNC);
     		update_tri_layer(_LFUNC, _RFUNC, _ADJUST);
     	}
     	break;
 
     case RFUNC:
     	if(record->event.pressed){
-    		layer_on(_FUNCTION);
+    		layer_on(_RFUNC);
     		update_tri_layer(_LFUNC, _RFUNC, _ADJUST);
     	}else{
-    		layer_off(_FUNCTION);
+    		layer_off(_RFUNC);
     		update_tri_layer(_LFUNC, _RFUNC, _ADJUST);
     	}
     	break;
-    // case LOWER:
-    //   if (record->event.pressed) {
-    //     layer_on(_LOWER);
-    //     update_tri_layer(_LOWER, _RAISE, _ADJUST);
-    //   } else {
-    //     layer_off(_LOWER);
-    //     update_tri_layer(_LOWER, _RAISE, _ADJUST);
-    //   }
-    //   return false;
-    //   break;
-    // case RAISE:
-    //   if (record->event.pressed) {
-    //     layer_on(_RAISE);
-    //     update_tri_layer(_LOWER, _RAISE, _ADJUST);
-    //   } else {
-    //     layer_off(_RAISE);
-    //     update_tri_layer(_LOWER, _RAISE, _ADJUST);
-    //   }
-    //   return false;
-    //   break;
+
     case ADJUST:
       if (record->event.pressed) {
         layer_on(_ADJUST);
